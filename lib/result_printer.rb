@@ -1,10 +1,7 @@
 class ResultPrinter
   def initialize
     @status_image = []
-
-    current_path = File.dirname("C:/rubytut2/lesson23/lesson23_6/image")
-    # current_path = File.dirname(__FILE__)
-
+    current_path = File.dirname(__FILE__) + "/.."
     counter = 0
     while counter <= 7
       file_name = current_path + "/image/#{counter}.txt"
